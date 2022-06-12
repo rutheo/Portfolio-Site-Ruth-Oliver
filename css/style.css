@@ -1,0 +1,111 @@
+/* 
+Style colours:
+Teal #367588
+Light cyan #cee7e6
+Fire opal #ef6351
+Sunray #e5b25d
+Dark purple #2c1320
+*/
+
+/*Typography*/
+
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+
+/*Images*/
+#logo {
+ max-width: 150px;   
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/*Links*/
+
+a {
+    color: #ef6351;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #e5b25d;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #2c1320;
+}
+
+a:active {
+    color: #ef6351;
+}
+
+
+/* Buttons*/
+
+.button {
+    display: inline-block; 
+    background-color: #e5b25d;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ef6351; 
+    transition: 0.2s opacity;
+  }
+
+  .button:hover {
+    opacity: 0.8; 
+    text-decoration: none;
+  }
+
+  .button.contact {
+    background-color: transparent;
+    color: #ef6351;
+    text-transform: uppercase;
+    border: 2px solid #ef6351;
+  }
+
+  .button.contact:hover {
+    background-color: #ef6351;
+    color: #ffffff;
+  }
