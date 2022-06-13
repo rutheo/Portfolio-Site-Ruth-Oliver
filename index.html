@@ -5,18 +5,21 @@
     <meta charset="utf-8">
     <title>Ruth Oliver's Portfolio Website</title>
     <link href="img\favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;900&family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;900&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <div>
-            <img id="logo" src="img\logo@1x.png" alt="Ruth Oliver's logo">
+        <div class="container">
+            <img id="logo" src="img\circle-logo.png" alt="Ruth Oliver's logo">
             <nav>
                 <ul>
                     <li><a href="index.html"> Work</a></li>
@@ -28,9 +31,9 @@
     </header>
     <main>
         <!-- hero section-->
-        <div id="#hero">
-            <div>
-                <h1>Hi, I'm Ruth. <br><span>a UX designer.</span></h1>
+        <div class="hero">
+            <div class="container">
+                <h1>Hi, I'm Ruth<br><span>a UX designer.</span></h1>
                 <p>I’m currently based in Cornwall, UK. I have a BSc in Experimental Psychology and experience
                     working in international marketing and web development.
                     I also own 26 houseplants.
@@ -38,48 +41,46 @@
             </div>
         </div>
         <!-- projects section -->
-        <div id="projects">
-            <div>
-                <h2>My Work</h2>
-                <div>
+        <div class="projects">
+            <div class="container">
+                <h2 class="underline center-text">My Work</h2>
+                <div class="row">
+                    <!-- Project 1-->
+                    <!-- Project 1 picture-->
+                    <picture>
+                        <source srcset="img\datemate\DateMate_Intro@1x.png" media="(max-width:767px)">
+                        <img src="img\datemate\DateMate_Intro@2x.png" alt="DateMate app project">
+                    </picture>
                     <div>
-                        <!-- Project 1-->
-                        <!-- Project 1 picture-->
-                        <picture>
-                            <source srcset="img\datemate\DateMate_Intro@1x.png" media="(max-width:767px)">
-                            <img src="img\datemate\DateMate_Intro@2x.png" alt="DateMate app project">
-                        </picture>
-                        <div>
-                            <!-- Project 1 text-->
-                            <h3>DateMate App</h3>
-                            <p>DateMate is a responsive web app for people to access anonymous advice and coaching
-                                relating to dating and relationships. The project was focused on expanding my UX design
-                                skill set, with a focus on usability testing.</p>
-                            <a class="button" href="datemate.html">Read more</a>
-                        </div>
-                    </div> <!-- End Project 1-->
+                        <!-- Project 1 text-->
+                        <h3 class="center-text">DateMate App</h3>
+                        <p>DateMate is a responsive web app for people to access anonymous advice and coaching
+                            relating to dating and relationships. The project was focused on expanding my UX design
+                            skill set, with a focus on usability testing.</p>
+                        <a class="button center-button" href="datemate.html">Read more</a>
+                    </div>
+                </div> <!-- End Project 1-->
+                <div class="row">
+                    <!-- Project 2-->
+                    <!-- Project 2 picture-->
+                    <picture>
+                        <source srcset="img\leanr2gether\Learn2gether_Intro@1x.png" media="(max-width:767px)">
+                        <img src="img\leanr2gether\Learn2gether_Intro@2x.png" alt="Learn2gether app project">
+                    </picture>
                     <div>
-                        <!-- Project 2-->
-                        <!-- Project 2 picture-->
-                        <picture>
-                            <source srcset="img\leanr2gether\Learn2gether_Intro@1x.png" media="(max-width:767px)">
-                            <img src="img\leanr2gether\Learn2gether_Intro@2x.png" alt="Learn2gether app project">
-                        </picture>
-                        <div>
-                            <!-- Project 2 text-->
-                            <h3>Learn2gether App</h3>
-                            <p>Learn2gether is a vocabulary learning app, allowing users to create their own flashcards
-                                or access a library of card sets on a variety of topics. This project was focused on
-                                exploring the key skills of a UX designer.</p>
-                            <a class="button" href="">Read more</a>
-                        </div>
-                    </div> <!-- End Project 1-->
-                </div>
+                        <!-- Project 2 text-->
+                        <h3 class="center-text">Learn2gether App</h3>
+                        <p>Learn2gether is a vocabulary learning app, allowing users to create their own flashcards
+                            or access a library of card sets on a variety of topics. This project was focused on
+                            exploring the key skills of a UX designer.</p>
+                        <a class="button center-button" href="">Read more</a>
+                    </div>
+                </div> <!-- End Project 1-->
             </div>
         </div>
     </main>
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>
                 Want to chat about any of my projects? Let's talk. Call: <a href="tel:+441234567">1234567</a> Prefer
@@ -93,7 +94,7 @@
                 <!--Social Media-->
                 <p>Social Media Links </p>
                 <ul>
-                    <li><a href="https://www.linkedin.com/" target="_blank">
+                    <li><a class="social-link" href="https://www.linkedin.com/" target="_blank">
                             <svg viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <style>
@@ -116,10 +117,18 @@
                                 </g>
                             </svg>
                         </a></li>
-                    <li><a href="https://www.twitter.com/" target="_blank">
-                        <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewbox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="400" style="fill:none;" width="400" x="56" y="56"/><path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104" style="fill:#1da1f2;fill-rule:nonzero;"/></svg>
+                    <li><a class="social-link" href="https://www.twitter.com/" target="_blank">
+                            <svg height="100%"
+                                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                                version="1.1" viewbox="0 0 512 512" width="100%" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect height="400" style="fill:none;" width="400" x="56" y="56" />
+                                <path
+                                    d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"
+                                    style="fill:#1da1f2;fill-rule:nonzero;" /></svg>
                         </a></li>
-                    <li><a href="https://www.instagram.com/x" target="_blank">
+                    <li><a class="social-link" href="https://www.instagram.com/x" target="_blank">
                             <svg enable-background="new 0 0 128 128" id="Social_Icons" version="1.1"
                                 viewbox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">

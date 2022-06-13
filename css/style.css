@@ -7,6 +7,10 @@ Sunray #e5b25d
 Dark purple #2c1320
 */
 
+* {
+    box-sizing: border-box;
+}
+
 /*Typography*/
 
 body {
@@ -47,18 +51,6 @@ h4 {
 }
 
 
-/*Images*/
-#logo {
- width: auto;
- height: 100px;
-}
-
-img {
-    width: 100%;
-}
-
-
-
 /*Links*/
 
 a {
@@ -84,29 +76,173 @@ a:active {
 /* Buttons*/
 
 .button {
-    display: inline-block; 
+    display: inline-block;
     background-color: #e5b25d;
-    color: #ffffff; /* needed to override the default link color */
+    color: #ffffff;
+    /* needed to override the default link color */
     font-weight: 700;
     padding: 15px;
     border-radius: 5px;
-    border-bottom: 2px solid #ef6351; 
+    border-bottom: 2px solid #ef6351;
     transition: 0.2s opacity;
-  }
+}
 
-  .button:hover {
-    opacity: 0.8; 
+.button:hover {
+    opacity: 0.8;
     text-decoration: none;
-  }
+}
 
-  .button.contact {
+.button.contact {
     background-color: transparent;
     color: #ef6351;
     text-transform: uppercase;
     border: 2px solid #ef6351;
-  }
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+}
 
-  .button.contact:hover {
+.button.contact:hover {
     background-color: #ef6351;
     color: #ffffff;
-  }
+}
+
+
+/*Images*/
+img {
+    width: 100%;
+}
+
+#logo {
+    max-width: 200px;
+
+    text-align: center;
+}
+
+
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+
+
+/*Header*/
+
+header {
+    background-color: #cee7e6;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding-top: 310px;
+}
+
+/*Navigation*/
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #367588
+}
+
+nav>ul>li>a:visited {
+    color: #367588
+}
+
+
+nav>ul>li>a:active {
+    color: #e5b25d;
+}
+
+nav>ul>li>a:hover,
+a:focus {
+    color: #e5b25d;
+}
+
+
+/*Footer*/
+#contact {
+    background-color: #cee7e6;
+    text-align: center;
+    padding: 20px auto;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline-block;
+    width: 10%;
+    margin: 20px;
+
+}
+
+#contact h2 {
+    padding-top: 20px;
+}
+
+
+/*Specific Elements*/
+
+.hero {
+    background-color: #cee7e6;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero h1 {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-button {
+    text-align: center;
+    width: 180px;
+    margin: 20px auto;
+    display: block;
+}
+
+#project-story h3 {
+    text-align: center;
+}
