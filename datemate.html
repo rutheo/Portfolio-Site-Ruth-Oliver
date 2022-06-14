@@ -14,11 +14,13 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;900&family=Montserrat:wght@200;400;700&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/5775751129.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <img id="logo" src="img\circle-logo.png" alt="Ruth Oliver's logo">
             <nav>
                 <ul>
@@ -29,10 +31,12 @@
                         <div class="topBotomBordersOut"><a href="about.html"> About</a></div>
                     </li>
                     <li>
-                        <div class="topBotomBordersOut"><a href="#contact"> Contact</a></div>
+                        <div class="topBotomBordersOut"><a href="#contact" onclick="menuToggle()"> Contact</a></div>
                     </li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+        </div>
         </div>
     </header>
     <main>
@@ -416,6 +420,10 @@
         </div>
 
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
