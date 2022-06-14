@@ -1,0 +1,1 @@
+console.log("Hi, welcome to Ruth Oliver's protfolio website!")
