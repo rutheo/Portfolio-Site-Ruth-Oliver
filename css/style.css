@@ -11,12 +11,16 @@ Dark purple #2c1320
     box-sizing: border-box;
 }
 
-/*Typography*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*----------------------Typography-----------------------------*/
 
 body {
     background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.6;
     color: #000;
@@ -51,11 +55,11 @@ h4 {
 }
 
 
-/*Links*/
+/*-----------------------Links------------------------------*/
 
 a {
-    color: #ef6351;
-    text-decoration: none;
+    color: #2B4162;
+    text-decoration: underline;
 }
 
 a:hover,
@@ -73,7 +77,7 @@ a:active {
 }
 
 
-/* Buttons*/
+/*------------------------- Buttons-----------------------------*/
 
 .button {
     display: inline-block;
@@ -87,41 +91,51 @@ a:active {
     transition: 0.2s opacity;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
     opacity: 0.8;
     text-decoration: none;
 }
 
 .button.contact {
     background-color: transparent;
-    color: #ef6351;
+    color: #2B4162;
     text-transform: uppercase;
-    border: 2px solid #ef6351;
+    border: 2px solid #2B4162;
     text-align: center;
     width: 200px;
     margin: 20px auto;
     display: block;
+    transition-duration: 0.2s;
+    transition-property: background-color, color;
+    ;
 }
 
-.button.contact:hover {
-    background-color: #ef6351;
+.button.contact:hover,
+.button.contact:focus {
+    background-color: #2B4162;
     color: #ffffff;
 }
 
 
-/*Images*/
+/*---------------------------Images--------------------------------*/
 img {
     width: 100%;
 }
 
 #logo {
-    max-width: 200px;
-
-    text-align: center;
+    max-height: 100px;
+    width: auto;
 }
 
+#me img {
+    max-height: 400px;
+    width: auto;
+    margin: 30px auto;
+    display: block;
+}
 
-/* Layout styling */
+/*------------------------------- Layout styling------------------------------ */
 
 .container {
     padding: 0 15px;
@@ -131,17 +145,24 @@ img {
     margin: 25px 0;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
 
 
-/*Header*/
+/*------------------------Header-------------------------------------*/
 
 header {
     background-color: #cee7e6;
     text-align: center;
     padding: 10px 0;
-}
-
-header {
     -webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
@@ -150,48 +171,84 @@ header {
 }
 
 main {
-    padding-top: 310px;
+    padding-top: 180px;
 }
 
-/*Navigation*/
+/*-----------------------------Navigation-------------------------------------*/
 
 nav {
     display: inline-block;
     width: 100%;
 }
 
-nav>ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav>ul>li {
+nav li {
     display: inline-block;
 }
 
-nav>ul>li>a {
+nav a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #367588
+    color: #2B4162
 }
 
-nav>ul>li>a:visited {
-    color: #367588
+nav a:visited {
+    color: #2B4162
 }
 
 
-nav>ul>li>a:active {
+nav a:active {
     color: #e5b25d;
 }
 
-nav>ul>li>a:hover,
+nav a:hover,
 a:focus {
-    color: #e5b25d;
+    color: #fff;
+}
+
+div.topBotomBordersOut a {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    margin: 0px 10px;
+    padding: 10px 10px;
+}
+
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 
-/*Footer*/
+/*--------------------------------------Footer--------------------------------------*/
 #contact {
     background-color: #cee7e6;
     text-align: center;
@@ -215,7 +272,7 @@ a:focus {
 }
 
 
-/*Specific Elements*/
+/*----------------------------------Specific Elements-------------------------------*/
 
 .hero {
     background-color: #cee7e6;
@@ -245,4 +302,149 @@ a:focus {
 
 #project-story h3 {
     text-align: center;
+}
+
+
+.svg-cats {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+}
+
+.svg-col {
+    width: 100%;
+}
+
+.padding-top {
+    padding-top: 30px;
+}
+
+
+/*------------------------------ Animation --------------------------*/
+
+
+@keyframes opacityOn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacityOn2 {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacityOn3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bubble {
+    animation: opacityOn 3s infinite;
+}
+
+.bubble2 {
+    animation: opacityOn2 3s infinite;
+}
+
+.purr {
+    animation: opacityOn3 2s infinite;
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    main {
+        padding-top: 107px;
+    }
+
+    .hero span {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .project-image img {
+        height: 300px;
+        width: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+
+@media only screen and (min-device-width: 1024px) {
+    .col-lg-7 {
+        width: 60%;
+    }
+
+    .col-lg-5 {
+        width: 40%;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        padding-top: 140px;
+    }
 }
