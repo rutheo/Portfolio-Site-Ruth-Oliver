@@ -99,8 +99,9 @@ a:active {
 
 .button.contact {
     background-color: transparent;
-    color: #2B4162;
+    color: #fff;
     text-transform: uppercase;
+    background-color: #2B4162;
     border: 2px solid #2B4162;
     text-align: center;
     width: 200px;
@@ -113,8 +114,8 @@ a:active {
 
 .button.contact:hover,
 .button.contact:focus {
-    background-color: #2B4162;
-    color: #ffffff;
+    background-color: #fff;
+    color: #2B4162;
 }
 
 
@@ -243,40 +244,43 @@ div.topBotomBordersOut a:hover:after {
     transform: translateY(0px);
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
     position: relative;
-  }
-  .navtoggle li .icon {
+}
+
+.navtoggle li .icon {
     position: absolute;
     right: 0;
     top: 2px;
     font-size: 20px;
     padding-right: 0;
     color: #2B4162;
-  }
+}
 
-  .navtoggle.responsive li  {
+.navtoggle.responsive li {
     display: block;
-  }
+}
 
-  .navtoggle.responsive nav {
+.navtoggle.responsive nav {
     padding: 24px 0 0;
-  }
-  .navtoggle.responsive li  {
+}
+
+.navtoggle.responsive li {
     display: block;
     padding: 10px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-  
-  .navtoggle.responsive li:last-child  {
+}
+
+.navtoggle.responsive li:last-child {
     padding: 0 0 10px;
-  }
+}
 
 /*--------------------------------------Footer--------------------------------------*/
 #contact {
     background-color: #cee7e6;
     text-align: center;
-    padding: 20px auto;
+    padding: 20px;
 }
 
 #contact ul {
@@ -429,7 +433,7 @@ Medium devices (640px and larger)
     }
 
     main {
-        padding-top: 107px;
+        padding-top: 95px;
     }
 
     .hero span {
@@ -454,13 +458,22 @@ Medium devices (640px and larger)
     .navtoggle li:last-child {
         display: none;
     }
-    nav > ul {
+
+    nav>ul {
         margin: 1em 0;
-      }
-    
-      #logo {
+    }
+
+    #logo {
         max-height: 100px;
         width: auto;
+    }
+
+    #contact ul li {
+        width: 5%;
+    }
+
+    .pop-image {
+        position: absolute;
     }
 }
 
@@ -483,7 +496,5 @@ Large devices (1024px or larger)
         margin-right: auto;
     }
 
-    main {
-        padding-top: 140px;
-    }
+
 }
